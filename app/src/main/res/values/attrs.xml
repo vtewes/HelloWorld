@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="state_default" format="boolean" />
+    <attr name="state_pressed" format="boolean" />
+    <attr name="state_deactivated" format="boolean" />
+</resources>

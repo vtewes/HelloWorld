@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:customapp="http://schemas.android.com/apk/res-auto">
+    <item customapp:state_default="true" android:drawable="@drawable/button_disabled" />
+    <item customapp:state_pressed="true" android:drawable="@drawable/button_normal" />
+    <item customapp:state_deactivated="true" android:drawable="@drawable/button_focused" />
+    <item android:drawable="@android:color/white" />
+</selector>
