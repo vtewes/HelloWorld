@@ -14,14 +14,19 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".Act_ConstraintTest"
             android:label="@string/title_activity_constraint_test"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Act_Slider"
+            android:label="@string/title_activity_act__slider"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Act_DragableStar"></activity>
     </application>
 
 </manifest>

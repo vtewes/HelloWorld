@@ -9,7 +9,8 @@ public class SportButton extends AppCompatButton {
     public enum CustomState {
         DEFAULT,
         PRESSED,
-        DEACTIVATED
+        DEACTIVATED,
+        INITIAL
     }
 
     SportButton(Context context){
@@ -18,7 +19,6 @@ public class SportButton extends AppCompatButton {
     SportButton(Context context, AttributeSet attrs) {
         super(context,attrs);
     }
-
     SportButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
@@ -27,18 +27,23 @@ public class SportButton extends AppCompatButton {
     protected static int[] STATE_PRESSED = { R.attr.state_pressed};
     protected static int[] STATE_DEACTIVATED = { R.attr.state_deactivated};
 
-    private CustomState mState = CustomState.DEACTIVATED;
+    private CustomState mState = CustomState.INITIAL;
 
-    public void update( ) {
+    public void update() {
         toggleState();
         refreshDrawableState();
     }
 
-    private void toggleState(){
-        if(mState.equals(CustomState.DEFAULT)) {
-          mState = CustomState.PRESSED;
+
+    private void toggleState() {
+        if (mState.equals(CustomState.DEFAULT)) {
+            mState = CustomState.PRESSED;
+        } else if (mState.equals(CustomState.PRESSED)) {
+            mState = CustomState.DEFAULT;
+        } else if (mState.equals(CustomState.INITIAL)){
+            mState = CustomState.DEFAULT;
         }else{
-              mState = CustomState.DEFAULT;
+            mState = CustomState.DEACTIVATED;
         }
     }
     @Override

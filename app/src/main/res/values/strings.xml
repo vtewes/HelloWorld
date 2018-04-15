@@ -7,9 +7,11 @@
     <string name="txt_btn_football">Football</string>
     <string name="txt_btn_squash">Squash</string>
     <string name="txt_btn_fitness">Fitness</string>
-    <string name="txt_btn_wingChun">Wing Chun</string>
+    <string name="txt_btn_wingChun">WT</string>
     <string name="title_activity_constraint_test">ConstraintTest</string>
     <string name="txt_btn_longText">LoooooonnnnngTeeext</string>
     <string name="txt_btn_swimming">Swimming</string>
     <string name="txt_btn_takewondo">Taekwondo</string>
+    <string name="txt_btn_qigong">Qigong</string>
+    <string name="title_activity_act__slider">Act_Slider</string>
 </resources>
